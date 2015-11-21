@@ -45,7 +45,7 @@ colnames(x_data) <- features[mean_and_std_features, 2]
 
 # Load activity names
 
-activities <- read.table("activity_labels.txt")
+activities <- read.table("UCI HAR Dataset/activity_labels.txt")
 
 # update values with correct activity names
 y_data[, 1] <- activities[y_data[, 1], 2]
